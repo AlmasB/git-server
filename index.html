@@ -22,7 +22,18 @@
       <h1>
 <a id="git-server" class="anchor" href="#git-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git-server</h1>
 
-<p>gs</p>
+
+<script>
+var on = false;
+function led() {
+    on = !on;
+    document.getElementById("led").innerHTML = on;
+}
+</script>
+
+<button type="button" onclick="led();">LED Button</button>
+
+<p id="led"></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/AlmasB/git-server">Git-server</a> is maintained by <a href="https://github.com/AlmasB">AlmasB</a>.</span>
